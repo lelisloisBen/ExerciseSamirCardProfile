@@ -1,4 +1,10 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+.files {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
  .filters {
 	 background: darkblue;
 	 color: white;
@@ -100,4 +106,3 @@
 	 border: none;
 	 border-radius: 0 0 3px 0;
 }
- 

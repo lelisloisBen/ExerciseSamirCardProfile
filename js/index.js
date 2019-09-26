@@ -75,20 +75,62 @@ function roleChange(val) {
 function cityChange(val) {
     if (val === '') {
         document.body.querySelector('#city').innerHTML = "Miami";
+        document.body.querySelector('#country').innerHTML = "USA";
     } else {
-        document.body.querySelector('#city').innerHTML = val;
+        if (val === 'Miami') {
+            document.body.querySelector('#city').innerHTML = val;
+            document.body.querySelector('#country').innerHTML = "USA";
+        }
+        if (val === 'Munich') {
+            document.body.querySelector('#city').innerHTML = val;
+            document.body.querySelector('#country').innerHTML = "Germany";
+        }
+        if (val === 'Caracas') {
+            document.body.querySelector('#city').innerHTML = val;
+            document.body.querySelector('#country').innerHTML = "Venezuela";
+        }
+        if (val === 'Toronto') {
+            document.body.querySelector('#city').innerHTML = val;
+            document.body.querySelector('#country').innerHTML = "Canada";
+        }
     }
 }
 
 function countryChange(val) {
     if (val === '') {
         document.body.querySelector('#country').innerHTML = "USA";
+        document.body.querySelector('#city').innerHTML = "Miami";
     } else {
-        document.body.querySelector('#country').innerHTML = val;
+        if (val === "USA") {
+            document.body.querySelector('#country').innerHTML = val;
+            document.body.querySelector('#city').innerHTML = "Miami";
+        }
+        if (val === "Germany") {
+            document.body.querySelector('#country').innerHTML = val;
+            document.body.querySelector('#city').innerHTML = "Munich";
+        }
+        if (val === "Venezuela") {
+            document.body.querySelector('#country').innerHTML = val;
+            document.body.querySelector('#city').innerHTML = "Caracas";
+        }
+        if (val === "Canada") {
+            document.body.querySelector('#country').innerHTML = val;
+            document.body.querySelector('#city').innerHTML = "Toronto";
+        }
+
     }
 }
 
+// function inputFileChange(val) {
+//     document.body.querySelector('#img').innerHTML = `<img src="${val}" />`;
+//     console.log(val);
+// }
+// console.log(document.body.querySelector('#avatar'));
 
+ function inputFileChange(event) {
+    var output = document.body.querySelector('#output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+  };
 
 
 

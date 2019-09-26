@@ -91,7 +91,7 @@
         <div id="widget_content">
             <div class="widget">
                 <div class="cover" id="coverId"><img src="https://wallpapercave.com/wp/wp2465958.jpg" /></div>
-                <img src="images/avatar.png" class="photo" />
+                <img id="output" src="images/avatar.png" class="photo" />
                 <h1><span id="firstName">Samir</span> <span id="lastName">Benzada</span></h1>
                 <h2 id="role">Webmaster</h2>
                 <h3><span id="city">Miami</span>, <span id="country">USA</span></h3>
@@ -102,6 +102,16 @@
                     <li><a id="instagram" href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
                 </ul>
                 </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3 files">
+                    <!-- <input onchange="inputFileChange(this.value)" type="file"> -->
+                    <input type="file" accept="image/*" onchange="inputFileChange(event)">
+                    <!-- <img id="output"/> -->
+                </div>
+            </div>
         </div>
 
 
