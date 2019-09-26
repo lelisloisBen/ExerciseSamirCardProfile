@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile Card Samir</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+
+
+        <div class="container-fluid filters">
+            <div class="row">
+                    <div class="col">
+                            <label>Include Cover?</label>
+                            <select onchange="coverChange(this.value)" class="form-control" for="includeCover">
+                                <option value=null>Include Cover</option>
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+                    </div>
+                    <div class="col">
+                            <label><br>First Name</label>
+                            <input onchange="firstNameChange(this.value)" class="form-control" for="name" type="text" placeholder="First Name"/>
+                    </div>
+                    <div class="col">
+                            <label><br>Last Name</label>
+                            <input class="form-control" for="lastname" type="text" placeholder="Last Name"/>
+                    </div>
+                    <div class="col">
+                            <label>Social media Position</label>
+                            <select class="form-control" for="socialMediaPosition">
+                                <option value="">null</option>
+                                <option value="position-right">Right</option>
+                                <option value="position-left">Left</option>
+                            </select>
+                    </div>
+                    <div class="col">
+                            <label><br> Twitter</label>
+                            <input class="form-control" for="twitter" type="text" placeholder="Twitter"/>
+                    </div>
+                    <div class="col">
+                            <label><br> Github</label>
+                            <input class="form-control" for="github" type="text" placeholder="Github"/>
+                    </div>
+                    <div class="col">
+                            <label><br> LinkedIn</label>
+                            <input class="form-control" for="linkedin" type="text" placeholder="LinkedIn"/>
+                    </div>
+                    <div class="col">
+                            <label><br> Instagram</label>
+                            <input class="form-control" for="instagram" type="text" placeholder="Instagram"/>
+                    </div>
+                    <div class="col">
+                            <label><br> Role</label>
+                            <select class="form-control" for="role">
+                                <option value="">null</option>
+                                <option value="Web Developer">Web Developer</option>
+                                <option value="Floor Planner">Floor Planner</option>
+                                <option value="Technical Writter">Technical Writter</option>
+                            </select>
+                    </div>
+                    <div class="col">
+                            <label><br> City</label>
+                            <select class="form-control" for="city">
+                                <option value="">null</option>
+                                <option value="Miami">Miami</option>
+                                <option value="Munich">Munich</option>
+                                <option value="Caracas">Caracas</option>
+                                <option value="Toronto">Toronto</option>
+                            </select>
+                    </div>
+                    <div class="col">
+                            <label><br> Country</label>
+                            <select class="form-control" for="country">
+                                <option value="">null</option>
+                                <option value="USA">USA</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Venezuela">Venezuela</option>
+                            </select>
+                    </div>
+            </div>
+            
+        </div>
+
+
+        <div id="widget_content">
+            <div class="widget">
+                <div class="cover" id="coverId"><img src="https://images.unsplash.com/photo-1511974035430-5de47d3b95da" /></div>
+                <img src="images/avatar.png" class="photo" />
+                <h1><span id="firstName">Samir</span> Benzada</h1>
+                <h2>Webmaster</h2>
+                <h3>Miami, USA</h3>
+                <ul class="position-right">
+                    <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+                </div>
+        </div>
+
+
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "samir_card_profile",
+  "version": "1.0.0",
+  "description": "use function and if statement to finish the exercise",
+  "main": "index.html",
+  "dependencies": {
+    "sass": "^1.22.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samirbenzada/ExerciseSamirCardProfile.git"
+  },
+  "author": "Samir Benzada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samirbenzada/ExerciseSamirCardProfile/issues"
+  },
+  "homepage": "https://github.com/samirbenzada/ExerciseSamirCardProfile#readme"
+}
