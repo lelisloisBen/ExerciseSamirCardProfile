@@ -4,6 +4,7 @@
   "description": "use function and if statement to finish the exercise",
   "main": "index.html",
   "dependencies": {
+    "python3": "0.0.1",
     "sass": "^1.22.12"
   },
   "devDependencies": {},
