@@ -121,12 +121,6 @@ function countryChange(val) {
     }
 }
 
-// function inputFileChange(val) {
-//     document.body.querySelector('#img').innerHTML = `<img src="${val}" />`;
-//     console.log(val);
-// }
-// console.log(document.body.querySelector('#avatar'));
-
  function inputFileChange(event) {
     var output = document.body.querySelector('#output');
     output.src = URL.createObjectURL(event.target.files[0]);
